@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blog.API</name>
+    </assembly>
+    <members>
+        <member name="T:Blog.API.Controllers.CategoryController">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.CategoryController.#ctor(AutoMapper.IMapper,Blog.Core.Infastructure.ICategoryRepository)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.CategoryController.Get">
+            <summary>
+            Get All Categories
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.CategoryController.Get(System.Int32)">
+            <summary>
+            Get Category By Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.CategoryController.Post(Blog.Core.AutoMapper_DTO.CategoryDTO)">
+            <summary>
+            create Category
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.CategoryController.Put(Blog.Core.AutoMapper_DTO.CategoryDTO)">
+            <summary>
+            Update Category
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.CategoryController.Delete(System.Int32)">
+            <summary>
+            Delete Category by ıd
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Blog.API.Controllers.PublicationController">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.PublicationController.#ctor(AutoMapper.IMapper,Blog.Core.Infastructure.IPublicationRepository)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.PublicationController.Get">
+            <summary>
+            Get All Publications
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.PublicationController.Get(System.Int32)">
+            <summary>
+            Get Publication By Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.PublicationController.Post(Blog.Core.AutoMapper_DTO.PublicationDTO)">
+            <summary>
+            Create Publication
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.PublicationController.Put(Blog.Core.AutoMapper_DTO.PublicationDTO)">
+            <summary>
+            Update Publication
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blog.API.Controllers.PublicationController.Delete(System.Int32)">
+            <summary>
+            delete Publication by Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Blog.API.Program">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Blog.API.Program.CreateHostBuilder(System.String[])">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:Blog.API.Startup">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Blog.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+    </members>
+</doc>

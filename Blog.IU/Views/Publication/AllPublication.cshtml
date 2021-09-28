@@ -1,0 +1,109 @@
+﻿
+@model IEnumerable<Blog.Data.Models.Publication>
+
+@{
+    ViewData["Title"] = "AllPublication";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+    <a asp-action="Create">Yeni Yayın</a>
+</p>
+
+<!--<div class="container">-->
+ 
+    <!-- Trigger the modal with a button -->
+    <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Yeni Yayın</button>-->
+
+    <!-- Modal -->
+    <!--<div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">-->
+
+            <!-- Modal content-->
+            <!--<div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <form data-ajax="true"
+                          data-ajax-method="POST"
+                          data-ajax-success='SuccessAddCollection'
+                          data-ajax-failure='FailedPost'
+                          data-ajax-url="/Category/AddCategory">
+                        <div class="form-content">
+
+
+
+                            <div class="f-row col s12">
+                                <label class="control-label">
+                                    <span>Kategori Adı</span>
+                                </label>
+                                <input type="text" class=" payment-field collection-price" placeholder="Kategori Adı">
+                            </div>
+                            <div class="f-row col s12">
+                                <label class="control-label">
+                                    <span>Kategori No</span>
+                                </label>
+                                <input type="text" class=" payment-field collection-price" placeholder="Kategori No">
+                            </div>
+
+
+
+                        </div>
+                        <button type="submit" disabled class=" add-payment disabled waves-effect waves-light btn btn-large btn-c btn-full">Kaydet</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>-->
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+     
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+
+            @foreach (var item in Model)
+            {
+                var date = item.CreatedDate.ToShortDateString();
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Content)
+                    </td>
+                    <td>
+                        @date
+                    </td>
+                    <td>
+                        @date
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>
+                </tr>
+            }}
+        </tbody>
+</table>
